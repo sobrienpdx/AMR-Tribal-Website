@@ -1,0 +1,39 @@
+body {
+background: linear-gradient(rgb(18, 16, 36),rgb(219, 224, 237));
+}
+
+header, .bulk {
+  border: 1px solid white;
+}
+a {
+  border: 1px solid white;
+  color: black;
+  height: 100%;
+  background: linear-gradient(rgba(233, 232, 250, 0.5),rgba(123, 60, 24, 0.5));
+  text-align: center;
+  bottom: 0;
+}
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  background-image: url("header2.png");
+  height: 10em;
+  background-size: 100% 10em;
+  background-repeat: no-repeat;
+}
+.summary h2  {
+  text-align: right;
+}
+.about {
+  border: 1px solid black;
+  height: 100%;
+}
+.bulk {
+  /* background-image: url("bison.jpeg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: linear-gradient(rgba(186, 127, 40, 0.86),rgba(238, 233, 209, 0.73)), url(bison2.png);
+  background-size: 100% auto;
+}
