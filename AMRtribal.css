@@ -1,39 +1,85 @@
 body {
-background: linear-gradient(rgb(18, 16, 36),rgb(219, 224, 237));
+background: linear-gradient(rgb(18, 16, 36),rgb(53, 60, 80, 0.89));
 }
 
 header, .bulk {
   border: 1px solid white;
 }
-a {
+.a {
+  display: flex;
   border: 1px solid white;
   color: black;
   height: 100%;
-  background: linear-gradient(rgba(233, 232, 250, 0.5),rgba(123, 60, 24, 0.5));
+  background: linear-gradient(rgba(233, 232, 250, 0.26),rgba(90, 43, 17, 0.75));
   text-align: center;
   bottom: 0;
 }
+
+a {
+  color: white;
+  align-self: flex-end;
+  font-size: 1.3em;
+  margin: .3em;
+}
+
 header{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 4fr;
+  grid-template-columns: 1fr 1fr 1fr 5fr;
   grid-template-rows: 1fr;
-  grid-gap: 10px;
-  background-image: url("header2.png");
+  grid-gap: .4em;
+  background-image: url("header3.png");
   height: 10em;
-  background-size: 100% 10em;
-  background-repeat: no-repeat;
+  background-size: 100% auto;
+  /* background-repeat: no-repeat; */
+  background-position: bottom;
+}
+
+header h1 {
+  padding-right: 5%;
+  text-align: right;
 }
 .summary h2  {
   text-align: right;
+  padding-right: .5em;
+  margin: 0.4em;
 }
 .about {
   border: 1px solid black;
   height: 100%;
+  padding: 1em;
+  font-size: 1.1em;
 }
+.summary {
+  font-size: 0.8em
+}
+
 .bulk {
   /* background-image: url("bison.jpeg"); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background: linear-gradient(rgba(186, 127, 40, 0.86),rgba(238, 233, 209, 0.73)), url(bison2.png);
   background-size: 100% auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 462px) {
+  header {
+    height: 17vh;
+    font-size: .7em;
+  }
 }
