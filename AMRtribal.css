@@ -29,7 +29,7 @@ header{
   grid-template-rows: 1fr;
   grid-gap: .3em;
   background-image: url("header3.png");
-  height: 10em;
+  height: 17vh;
   background-size: 102% auto;
   /* background-repeat: no-repeat; */
   background-position: bottom;
@@ -42,7 +42,9 @@ header h1 {
 .summary h2  {
   text-align: right;
   padding-right: .5em;
+  padding-top: .4em;
   margin: 0.4em;
+  margin-top: 0;
 }
 .about {
   border: 1px solid black;
@@ -60,6 +62,7 @@ header h1 {
   background-attachment: fixed;
   background: linear-gradient(rgba(186, 127, 40, 0.86),rgba(238, 233, 209, 0.73)), url("bison3.png");
   background-size: 100% auto;
+  height: 83vh;
 }
 
 a:link {
@@ -78,10 +81,16 @@ a:active {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 462px) {
+@media only screen and (max-width: 800px) {
   header {
     height: 17vh;
     font-size: .7em;
+  }
+  .list button {
+    font-size: 77%;
+  }
+  .bulky {
+    height: 83vh;
   }
 }
 /* SERVICES */
@@ -91,9 +100,9 @@ a:active {
   font-size: .8em;
 }
 
-.list h2, .list h1 {
+.list button, .list h1 {
   border: 1px solid white;
-  margin: 1em;
+  margin-left: .5em;
   padding: .3em;
   background:linear-gradient(rgba(233, 232, 250, 0.26),rgba(90, 43, 17, 0.75));
   background-color: black;
@@ -109,8 +118,9 @@ a:active {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background: linear-gradient(rgba(186, 127, 40, 0.58),rgba(238, 233, 209, 0.49)), url(bison3.png);
-    background-size: 100% auto;
-    height: 100vh;
+    background-size: 100%;
+    background-position: top right;
+    height: 83vh;
 }
 
 .blank {
@@ -120,6 +130,25 @@ a:active {
 .services {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; */
   grid-gap: .3em;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70vh;
+}
+.hidden {
+  display: none;
+}
+
+
+/* CONTACT PAGE */
+
+.contact {
+  border: 1px white solid;
+  background-color: rgba(237, 225, 219, 0.49);
+  padding: 0.5em 1.5em 2em;
 }
