@@ -29,25 +29,31 @@ header{
   grid-template-rows: 1fr;
   grid-gap: .3em;
   background-image: url("header3.png");
-  height: 17vh;
+  height: 18vh;
   background-size: 102% auto;
   /* background-repeat: no-repeat; */
   background-position: bottom;
 }
 
-header h1 {
+#logo {
   padding-right: 5%;
   text-align: right;
+  height: 18%;
+  position: absolute;
+  right: 1%;
+  /* top: 5%; */
 }
+
 .summary h2  {
   text-align: right;
   padding-right: .5em;
-  padding-top: .4em;
-  margin: 0.4em;
+  padding-top: .3em;
+  /* margin: 0.4em; */
   margin-top: 0;
+  margin: 0;
 }
 .about {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 100%;
   padding: 1em;
   font-size: 1.1em;
@@ -62,7 +68,7 @@ header h1 {
   background-attachment: fixed;
   background: linear-gradient(rgba(186, 127, 40, 0.86),rgba(238, 233, 209, 0.73)), url("bison3.png");
   background-size: 100% auto;
-  height: 83vh;
+  min-height: 82vh;
 }
 
 a:link {
@@ -83,14 +89,18 @@ a:active {
 
 @media only screen and (max-width: 800px) {
   header {
-    height: 17vh;
+    /* height: 17vh; */
     font-size: .7em;
   }
   .list button {
     font-size: 77%;
   }
   .bulky {
-    height: 83vh;
+    /* height: 83vh; */
+  }
+  #logo {
+    height:10%;
+    top: 4%;
   }
 }
 /* SERVICES */
@@ -115,16 +125,17 @@ a:active {
 
 .bulky {
     /* background-image: url(bison.jpeg); */
+    border: 1px white solid;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background: linear-gradient(rgba(186, 127, 40, 0.58),rgba(238, 233, 209, 0.49)), url(bison3.png);
     background-size: 100%;
     background-position: top right;
-    height: 83vh;
+    min-height: 82vh;
 }
 
 .blank {
-  border: solid 1px black;
+  /* border: solid 1px black; */
 }
 
 .services {
@@ -150,5 +161,17 @@ a:active {
 .contact {
   border: 1px white solid;
   background-color: rgba(237, 225, 219, 0.49);
-  padding: 0.5em 1.5em 2em;
+  padding: 0.5em 4.5em 2em;
+  margin-top: 1em;
+  text-shadow:
+}
+
+.contact h1, .contact h2 {
+  text-shadow: 2px 2px #ffff;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 1.1em;
+  margin: 0;
 }
