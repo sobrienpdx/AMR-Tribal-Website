@@ -28,7 +28,7 @@ header{
   grid-template-columns: 1fr 1fr 1fr 5fr;
   grid-template-rows: 1fr;
   grid-gap: .3em;
-  background-image: url("header3.png");
+  background-image: url("header4.png");
   height: 18vh;
   background-size: 102% auto;
   /* background-repeat: no-repeat; */
@@ -88,22 +88,7 @@ a:active {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 800px) {
-  header {
-    /* height: 17vh; */
-    font-size: .7em;
-  }
-  .list button {
-    font-size: 77%;
-  }
-  .bulky {
-    /* height: 83vh; */
-  }
-  #logo {
-    height:10%;
-    top: 4%;
-  }
-}
+
 
 
 
@@ -121,12 +106,15 @@ a:active {
 .list button {
   border: 1px solid white;
   margin: .5em;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: .3em;
   /* background:linear-gradient(rgba(233, 232, 250, 0.26),rgba(90, 43, 17, 0.75));
   background-color: black; */
   background-color: rgba(225, 225, 225, 0.5);
   color: black;
   font-size: 1.5em;
+  transition: .3s;
 }
 /* #title h1 {
   text-align: center;
@@ -162,7 +150,9 @@ a:active {
   /* border: solid 1px black; */
   border: 1px solid white;
   background-color: rgba(225, 225, 225, 0.5);
-  margin: .5em;
+  margin-top: .5em;
+  margin-right: 2em;
+  margin-bottom: .5em;
 }
 
 .blank * {
@@ -192,12 +182,21 @@ button:visited {
 
 button:hover {
     text-decoration: underline;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 button:active {
     text-decoration: underline;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+button:focus {
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+    outline: none;
+    background-color: #ffffffbf;
 }
 
 
@@ -221,4 +220,21 @@ button:active {
 .contact p {
   font-size: 1.1em;
   margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    font-size: .7em;
+    background-size: 120%;
+  }
+  .list button {
+    font-size: 102%;
+  }
+  #title {
+    font-size: 1.5em;
+  }
+  #logo {
+    height:10%;
+    top: 4%;
+  }
 }
