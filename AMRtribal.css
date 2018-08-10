@@ -178,11 +178,29 @@ a:active {
   /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; */
   grid-gap: .3em;
 }
-
-
 .hidden {
   display: none;
 }
+
+button:link {
+    text-decoration: none;
+}
+
+button:visited {
+    text-decoration: none;
+}
+
+button:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+button:active {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+
 
 
 /* CONTACT PAGE */
